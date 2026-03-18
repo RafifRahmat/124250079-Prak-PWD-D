@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DroneBox/page=Form</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="main">
+      <div class="navbar">
+        <div class="icon">
+          <h2 class="logo"><a href="index.html">DroneBox</a></h2>
+        </div>
+
+        <div class="button">
+          <a href="form.html " class="btn">Kirim Sekarang</a>
+        </div>
+
+        <form class="form" action="proses.php" method="post">
+            <h2>Detail Pengiriman</h2>
+
+            <label for="nama">Nama Pengirim</label>
+            <input type="text" name="nama" placeholder="example: Nama Pengirim" required>
+
+            <label for="nomer">Nomer Telepon Pengirim</label>
+            <input type="text" name="nomer" placeholder="example: 0878XXXXXXXX" required>
+
+            <label for="email">Email Pengirim</label>
+            <input type="email" name="email" placeholder="example: bapakao154@gmail.com" required>
+
+            <label for="paket">Berat Paket (Kg)</label>
+            <input type="text" name="paket" placeholder="example: 70" required>
+
+            <label for="kategori">Kategori Layanan</label>
+            <select name="kategori" id="kategori">
+                <option value="Sameday">Same Day Service</option>
+                <option value="Express">Express Delivery</option>
+                <option value="Instant">Instant Drop(2-4jam)</option>
+            </select><br>
+
+            <input type="checkbox" name="persetujuan" required>
+            <label for="persetujuan">Dengan menggunakan layanan kami, Anda dianggap telah membaca dan menyetujui seluruh aturan yang berlaku.</label>
+            <button class="btn1" type="reset">Reset</button>
+            <button type="submit" name="submit" class="btn1">Kirim</button>
+        </form>
+</body>
+</html>
